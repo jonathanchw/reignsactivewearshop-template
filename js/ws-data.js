@@ -1,10 +1,10 @@
 const WEBSITE_NAME = 'Reigns Active Wear Shop';
 const WEBSITE_URL = 'reignsactivewearshop.com';
 const WEBSITE_CORP = 'Fitness Reign Inc.';
-const WEBSITE_PHONE = '8555071170';
-const WEBSITE_EMAIL = 'support@' + WEBSITE_URL;
-const WEBSITE_ADDRESS = '2654 W Horizon Ridge Pkwy Ste BF pmb 1007 Henderson, NV 89052, USA';
-const WEBSITE_RETURN_ADDRESS = 'PO BOX 447 Lakeland, FL 33815, USA';
+const WEBSITE_PHONE = '(844) 791-3066';
+const WEBSITE_EMAIL = 'support@toys.com';
+const WEBSITE_ADDRESS = '1205 E Waterside Cove Apt 32 Midvale, UT 84047, USA';
+const WEBSITE_RETURN_ADDRESS = '12913 Harbor Blvd Ste Q3 #433, Garden Grove, CA 92840,USA';
 const WEBSITE_DESCRIPTOR = 'reignsactivewearshop';
 const WEBSITE_TAGLINE = 'Online Shopping Simplified';
 const WEBSITE_ABOUT_US='Great Deals At Great Prices'

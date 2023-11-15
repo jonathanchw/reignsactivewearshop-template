@@ -1,365 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
-    <link rel='stylesheet' type='text/css' href="./config/css/bootstrap.min.css">
-    <link rel='stylesheet' type='text/css' href="./config/css/custom.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel='stylesheet' type='text/css' href="./config/css/style.css">
-    <link rel="stylesheet" href="./config/css/checkout_custom.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-
-</head>
-
-<body>
-
-
+  <body>
+    <div class="nav-home"></div>
 
     <section class="navbar-section navbar-section3" id="navbar-section">
+      <header class="navbar-nav3">
+        <div class="topbar topbar-background-color top-bar">
+          <div class="container">
+            <div class="row align-content-between">
+              <div class="col text-sm">
+                <li class="list-inline-item">
+                  <a href="terms.html">Terms</a>
+                </li>
+                <li class="list-inline-item ms-3">
+                  <a href="privacy.html">Privacy</a>
+                </li>
+                <li class="list-inline-item ms-3">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </div>
 
-        <header class="navbar-nav3">
-
-            <div class="topbar topbar-background-color top-bar">
-                <div class="container">
-                    <div class="row align-content-between">
-
-                        <div class="col text-sm">
-                            <li class="list-inline-item"><a href="terms.html">Terms</a></li>
-                            <li class="list-inline-item  ms-3"><a href="privacy.html">Privacy</a></li>
-                            <li class="list-inline-item  ms-3"><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-
-
-                        <div class="col-auto lang-right d-none d-lg-block">
-                            <ul class="list-inline m-0">
-                                <li class="list-inline-item ms-3">Contact Us: <a href="" class="js_website-email"></a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-                </div>
+              <div class="col-auto lang-right d-none d-lg-block">
+                <ul class="list-inline m-0">
+                  <li class="list-inline-item ms-3">
+                    Contact Us: <a href="" class="js_website-email"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+        </div>
 
+        <div class="primary-navigation px-4 py-lg-2">
+          <div class="container">
+            <div class="d-flex align-items-center">
+              <a class="navbar-brand nav-text-color" href="index.html"
+                ><span class="js_website-name"></span
+              ></a>
 
-
-
-
-
-            <div class="primary-navigation  px-4 py-lg-2">
-                <div class="container">
-                    <div class="d-flex align-items-center">
-
-                        <a class="navbar-brand nav-text-color" href="index.html"><span
-                                class="js_website-name"></span></a>
-
-
-
-
-                        <ul class="navbar-nav cart-nav ms-auto">
-                            <li class="cart_link"> <a href="javascript:void(0);"><span
-                                        class="cart_text nav-text-color"><i class="bi bi-basket fs-2"></i> </span> <span
-                                        class="cart_amt nav-text-color"> $
-                                        <p id="cart_amt" class="subtotalAmount" style="display: inline;"></p>
-                                    </span>
-                                    <!-- <span class="material-icons bag_icon ">shopping_bag
-                              <span class="bag_count" id="bag_count">
-                              	<p id="cart_qty" style="display: inline;"></p>
-                              </span>
-                              </span> -->
-                                </a>
-                                <div class="minibag cart_bag cart-bag-outline" id="minicart">
-
-                                    <!-- class = empty_bag -->
-                                    <div class="minicart_inner">
-                                        <!-- <p class="empty_cart">
-                                 Your cart is empty
-                                 </p> -->
-                                        <div class="minicart_table table-responsive">
-                                            <table class="table minicart_details">
-                                                <tr id="minicartRow">
-
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div class="subtotal_column">
-                                            <p> Subtotal: $<span class="subtotalAmount" id="subtotalAmount"></span> </p>
-                                        </div>
-                                        <div class="minicart_buttons"> <a href="cart.html"
-                                                class="btn btn-continue shop-btn-outline"> View Cart </a> <a
-                                                href="checkout.html" class="btn btn-update shop-btn-color"> Checkout
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button class="navbar-toggler menu-icon ms-4 d-block d-lg-none" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-                            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation"> <span
-                                class="navbar-toggler-icon"></span> </button>
+              <ul class="navbar-nav cart-nav ms-auto">
+                <li class="cart_link">
+                  <a href="javascript:void(0);"
+                    ><span class="cart_text nav-text-color"
+                      ><i class="bi bi-basket fs-2"></i>
+                    </span>
+                    <span class="cart_amt nav-text-color">
+                      $
+                      <p
+                        id="cart-total"
+                        class="subtotalAmount"
+                        style="display: inline"
+                      ></p>
+                    </span>
+                  </a>
+                  <div class="minibag cart_bag cart-bag-outline" id="minicart">
+                    <!-- class = empty_bag -->
+                    <div class="minicart_inner">
+                      <!-- <p class="empty_cart">
+                                   Your cart is empty
+                                   </p> -->
+                      <div class="minicart_table table-responsive">
+                        <table class="table minicart_details">
+                          <tr id="minicartRow"></tr>
+                        </table>
+                      </div>
+                      <div class="subtotal_column">
+                        <p>
+                          Subtotal:
+                          <span
+                            class="subtotalAmount"
+                            id="cart-subtotal"
+                          ></span>
+                        </p>
+                      </div>
+                      <div class="minicart_buttons">
+                        <a
+                          href="cart.html"
+                          class="btn btn-continue shop-btn-outline"
+                        >
+                          View Cart
+                        </a>
+                        <a
+                          href="checkout.html"
+                          class="btn btn-update shop-btn-color"
+                        >
+                          Checkout
+                        </a>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                </li>
+              </ul>
 
-
-                <div class="container">
-
-
-                    <nav class="navbar navbar-expand-lg p-0 pb-1 nav-color">
-                        <div class="collapse navbar-collapse" id="navbarsExample03">
-                            <ul class="navbar-nav me-auto mb-lg-0">
-                                <li class="nav-item active"> <a class="nav-link nav-text-color" aria-current="page"
-                                        href="index.html">Home</a> </li>
-                                <li class="nav-item"> <a class="nav-link nav-text-color" aria-current="page"
-                                        href="shop.html">Shop</a> </li>
-                                <li class="nav-item"> <a class="nav-link  nav-text-color" aria-current="page"
-                                        href="cart.html">Cart</a> </li>
-                                <li class="nav-item"> <a class="nav-link  nav-text-color" aria-current="page"
-                                        href="checkout.html">Checkout</a> </li>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-
-
-                </div>
+              <button
+                class="navbar-toggler menu-icon ms-4 d-block d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
+          </div>
 
-
-
-
-
-
-        </header>
-
-
-
+          <div class="container">
+            <nav class="navbar navbar-expand-lg p-0 pb-1 nav-color">
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="shop.html"
+                      >Shop</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="cart.html"
+                      >Cart</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="checkout.html"
+                      >Checkout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
     </section>
 
-    <script type="text/javascript">
-        $(function () {
-            // var total = sessionStorage.getItem('cartTotal');
-            // var qty = sessionStorage.getItem('qty');
-            // console.log(qty);
-            // // $('#cart_amt').html(total);
-            // $('#cart_qty').html(qty);
-            var productCart = [];
-            var tot_pdt_count = 19;
-            for (i = 1; i <= tot_pdt_count; i++) {       //total pdt count
-
-                var shoppingCart = JSON.parse(sessionStorage.getItem('product-' + i));
-                var cartpdtTotal = productCart.push(shoppingCart);
-
-            }
-            //console.log(productCart);
-            var cartPdtArrNew = productCart.filter(function (el) {
-                return el != null && el != "";
-            });
-
-            console.log(cartPdtArrNew);
-            sessionStorage.setItem("cartPdtArr", JSON.stringify(cartPdtArrNew));
-
-            let table = document.getElementById("minicartRow");
-
-            //let table = '<thead><tr><th>id</th><th>name</th><th>age</th></tr></thead><tbody>';
-
-            // let table = $('#cartRO');
-
-
-            var TotalPrice = {};
-
-            var showCartNumber = false;
-            cartPdtArrNew.forEach(function (d) {
-                if (d.EnableMaxqty > 1) {
-                    showCartNumber = true;
-                    return;
-                }
-            });
-
-            cartPdtArrNew.forEach(function (d) {
-                if (d.billModel == '2') {
-                } else {
-                    table += '<tr id="row-' + d.Id + '" data-product-id="' + d.Id + '" data-product-name="' + d.Name + '">'
-                    table += '<td><img src="' + d.Image + '" class="img-fluid  mini-pdt-image" id="mini-image-' + d.Id + '"></td>';
-                    table += '<td><p>' + d.Name + '</p><p class="cart_amount"><span class="cartNumber" id="cartNumber">' + (showCartNumber ? d.Qty : '') + '</span> X <span class="cartPrice" id="cartPrice">$' + d.Price + '</span></p><p class="cart_amount" style="display:none;"> = <span class="cartTotal" id="cartTotal" data-total="' + d.Total + '">$' + d.Total + '</span></p></td>';
-                    table += '<td><span class="material-icons close_button close-button" id="close-' + d.Id + '">close</span></td></tr>';
-                }
-            })
-
-            $('#minicartRow').empty().html(table);
-
-            var miniTotal = sessionStorage.getItem('cartTotal');
-
-            $('.subtotalAmount').html(miniTotal);
-
-            var total = 0;
-            $('.cartTotal').each(function () {
-
-                total += parseFloat($(this).data('total'), 10);
-                //console.log($(this).attr('data-total'));
-                //console.log(total)
-                $('#subtotalAmount').html(total.toFixed(2));
-                $('#cart_amt').html(total.toFixed(2));
-            })
-
-            var qtyCol = 0;
-            $('.cartNumber').each(function () {
-
-                qtyCol += parseFloat($(this).data('qty'), 10);
-                $('#cart_qty').html(qtyCol);
-            })
-            $('.close-button').click(function () {
-
-                console.log($(this).parents('tr').data('product-id'));
-
-                sessionStorage.removeItem($(this).parents('tr').data('product-id'));
-
-                var removeItem = $(this).parents('tr').data('product-id');
-
-                var ar = sessionStorage.getItem("cartPdtArr");
-
-                for (var i = 0; i < ar.length; i++) {
-                    if (ar[i].Id == removeItem) {
-                        ar.splice(i, 1);
-
-                    }
-                    if (sessionStorage.getItem('cartPdtArrNew') == '[]' || sessionStorage.getItem('cartPdtArrNew') == '') {
-                        $('.subtotalAmount').html('0.00');
-                        $('#cart_amt').html('0.00');
-                        $('.bag_icon').removeClass('active');
-                    }
-                }
-                location.reload(true);
-                //            $('#cart_amt').html(total);
-                // $('#cart_qty').html(qty);
-                // $('.subtotalAmount').html(total);
-            })
-
-            if (sessionStorage.getItem('cartPdtArr') == '[]' || sessionStorage.getItem('cartPdtArr') == '') {
-                //alert('hello');
-                $('#minicartRow')
-                    .empty()
-                    .html('<tr class="emptyRow"><td colspan="3"><p class="cart_empty">Cart is Empty</p></td></tr>');
-                $('#cart_amt').html('0.00');
-                $('#cart_qty').html('0');
-                $('.subtotalAmount').html('0.00');
-                $('.cart_bag').addClass('empty_bag');
-                $('.bag_icon').removeClass('active');
-            }
-        })
-    </script>
-
     <div class="py-5">
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p>Got a question? Have some feedback to share? We'd love to hear from you!</p>
-            <p><b>Customer Service Hours</b></p>
-            <p>Our support staff are ready to assist you 9:00AM - 5:00PM EST Monday through Friday.</p>
-            <p><b>Contact Info</b></p>
-            <p><span class="js_website-name"></span></p>
-            <p><span class="js_website-corp"></span></p>
-            <p><a href="" class="js_website-email"></a></p>
-            <p><span class="js_website-phone"></span></p>
-            <p><span class="js_website-address"></span></p>
-            <p><b>Returns</b></p>
-            <p><span class="js_website-return-partner">Fulfillmentx LLC</span></p>
-            <p><span class="js_website-return-address"></span></p>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+          Got a question? Have some feedback to share? We'd love to hear from
+          you!
+        </p>
+        <p><b>Customer Service Hours</b></p>
+        <p>
+          Our support staff are ready to assist you 9:00AM - 5:00PM EST Monday
+          through Friday.
+        </p>
+        <p><b>Contact Info</b></p>
+        <p><span class="js_website-name"></span></p>
+        <p><span class="js_website-corp"></span></p>
+        <p><a href="" class="js_website-email"></a></p>
+        <p><span class="js_website-phone"></span></p>
+        <p><span class="js_website-address"></span></p>
+        <p><b>Returns</b></p>
+        <p><span class="js_website-return-partner">Fulfillmentx LLC</span></p>
+        <p><span class="js_website-return-address"></span></p>
 
-            <!-- <p><b>Cancellations</b></p>
+        <!-- <p><b>Cancellations</b></p>
    <p>You can cancel your recurring order anytime. Click <a href="cancellation.html" taget="_blank" >here</a> to submit your product cancellation request.</p> -->
-
-        </div>
+      </div>
     </div>
 
     <footer class="footer1 footer-background-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="company-info">
+              <h5>About</h5>
+              <ul>
+                <li>
+                  Copyright &copy; <span class="js_website-year"></span>
+                  <span class="js_website-name"></span>
+                </li>
+                <li class="js_website-corp"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div>
+              <h5>Menu</h5>
+              <ul>
+                <!--If any 1 product in shop is set to bill model 2,3,4 then cancel link enable -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="shop.html">Shop</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 pt-md-0 pt-5">
+            <h5>Contact</h5>
+            <ul>
+              <li class="pb-2">
+                <i class="fa fa-phone fs-5 me-3 footer-icon-color"></i>
+                <a href="" class="js_website-phone"></a>
+              </li>
+              <li class="pb-2">
+                <i class="fa fa-envelope fs-5 me-3 footer-icon-color"></i>
+                <a href="" class="js_website-email"></a>
+              </li>
+              <li>
+                <i
+                  class="fas fa-map-marker-alt fs-5 me-3 footer-icon-color"
+                ></i>
+                <span class="js_website-address"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 pt-md-0 pt-5">
+            <h5>Return Order</h5>
+            <ul>
+              <li class="js_website-return-partner">Fulfillmentx LLC</li>
+              <ul>
+                <li><span class="js_website-return-address"></span></li>
+              </ul>
+              <li class="pb-2">
+                <i class="fa fa-phone fs-5 me-3 footer-icon-color"></i>
+                <a href="tel:phonenumber">7145808450</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="company-info">
-                        <h5>About</h5>
-                        <ul>
-                            <li>Copyright &copy; <span class="js_website-year"></span> <span
-                                    class="js_website-name"></span></li>
-                            <li class="js_website-corp"></li>
-                        </ul>
-
-                    </div>
+          <div class="copyright">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-6">
+                <span class="js_website-name"></span>
+              </div>
+              <div class="col-12 col-md-6 text-md-end">
+                <div class="footer-cc">
+                  <img src="./images/mastercard.png" />
+                  <img src="./images/discover.png" />
+                  <img src="./images/visa.png" />
                 </div>
-                <div class="col-lg-3 col-md-4">
-                    <div>
-                        <h5>Menu</h5>
-                        <ul>
-                            <!--If any 1 product in shop is set to bill model 2,3,4 then cancel link enable -->
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="terms.html">Terms</a></li>
-                            <li><a href="privacy.html">Privacy</a></li>
-                            <li><a href="shop.html">Shop</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 pt-md-0 pt-5">
-                    <h5>Contact</h5>
-                    <ul>
-                        <li class="pb-2"><i class="fa fa-phone fs-5 me-3 footer-icon-color"></i> <a href=""
-                                class="js_website-phone"></a></li>
-                        <li class="pb-2"><i class="fa fa-envelope  fs-5 me-3  footer-icon-color"></i> <a href=""
-                                class="js_website-email"></a></li>
-                        <li><i class="fas fa-map-marker-alt  fs-5 me-3  footer-icon-color"></i>
-                            <span class="js_website-address"></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 pt-md-0 pt-5">
-                    <h5>Return Order</h5>
-                    <ul>
-                        <li class="js_website-return-partner">Fulfillmentx LLC</li>
-                        <ul>
-                            <li><span class="js_website-return-address"></span></li>
-                        </ul>
-			<li class="pb-2"><i class="fa fa-phone fs-5 me-3 footer-icon-color"></i>
-                            <a href="tel:phonenumber">7145808450</a>
-                        </li>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="copy-section">
-            <div class="container">
-                <div class="copyright">
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-6">
-                            <span class="js_website-name"></span>
-                        </div>
-                        <div class="col-12 col-md-6 text-md-end">
-                            <div class="footer-cc">
-                                <img src="./config/images/payment/mastercard.png"> <img
-                                    src="./config/images/payment/discover.png"> <img
-                                    src="./config/images/payment/visa.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="./config/data/ws-data.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="js/productData.js"></script>
+    <script src="js/Cart.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/ws-data.js" defer></script>
+    <script src="js/Cart.js"></script>
     <script>
-        // get current year
-        var currentYear = new Date().getFullYear();
-        // set current year in footer
-        document.querySelector('.js_website-year').innerHTML = currentYear;
+      // get current year
+      var currentYear = new Date().getFullYear();
+      // set current year in footer
+      document.querySelector(".js_website-year").innerHTML = currentYear;
     </script>
-</body>
-
+  </body>
 </html>

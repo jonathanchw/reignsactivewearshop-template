@@ -29,8 +29,8 @@
 }
 input.error,
 .error {
-  box-shadow: 0 0 0.125rem 0 red;
-  border: 0.0625rem solid red;
+  box-shadow: 0 0 0.125rem 0 red !important;
+  border: 0.0625rem solid red !important;
 }
 
 
