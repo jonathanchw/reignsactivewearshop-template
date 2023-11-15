@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+   <link rel="stylesheet" type="text/css" href="./css/custom.css" /> 
+   <link rel="stylesheet" type="text/css" href="./css/checkout_custom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+  </head>
+
+  <body>
+    <section class="navbar-section navbar-section3" id="navbar-section">
+      <header class="navbar-nav3">
+        <div class="topbar topbar-background-color top-bar">
+          <div class="container">
+            <div class="row align-content-between">
+              <div class="col text-sm">
+                <li class="list-inline-item">
+                  <a href="terms.html">Terms</a>
+                </li>
+                <li class="list-inline-item ms-3">
+                  <a href="privacy.html">Privacy</a>
+                </li>
+                <li class="list-inline-item ms-3">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </div>
+
+              <div class="col-auto lang-right d-none d-lg-block">
+                <ul class="list-inline m-0">
+                  <li class="list-inline-item ms-3">
+                    Contact Us: <a href="" class="js_website-email"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="primary-navigation px-4 py-lg-2">
+          <div class="container">
+            <div class="d-flex align-items-center">
+              <a class="navbar-brand nav-text-color" href="index.html"
+                ><span class="js_website-name"></span
+              ></a>
+
+              <ul class="navbar-nav cart-nav ms-auto">
+                <li class="cart_link">
+                  <a href="javascript:void(0);"
+                    ><span class="cart_text nav-text-color"
+                      ><i class="bi bi-basket fs-2"></i>
+                    </span>
+                    <span class="cart_amt nav-text-color">
+                      $
+                      <p
+                        id="cart-total"
+                        class="subtotalAmount"
+                        style="display: inline"
+                      ></p>
+                    </span>
+                  </a>
+                  <div class="minibag cart_bag cart-bag-outline" id="minicart">
+                    <!-- class = empty_bag -->
+                    <div class="minicart_inner">
+                      <!-- <p class="empty_cart">
+                                   Your cart is empty
+                                   </p> -->
+                      <div class="minicart_table table-responsive">
+                        <table class="table minicart_details">
+                          <tr id="minicartRow"></tr>
+                        </table>
+                      </div>
+                      <div class="subtotal_column">
+                        <p>
+                          Subtotal:
+                          <span
+                            class="subtotalAmount"
+                            id="cart-subtotal"
+                          ></span>
+                        </p>
+                      </div>
+                      <div class="minicart_buttons">
+                        <a
+                          href="cart.html"
+                          class="btn btn-continue shop-btn-outline"
+                        >
+                          View Cart
+                        </a>
+                        <a
+                          href="checkout.html"
+                          class="btn btn-update shop-btn-color"
+                        >
+                          Checkout
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <button
+                class="navbar-toggler menu-icon ms-4 d-block d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="container">
+            <nav class="navbar navbar-expand-lg p-0 pb-1 nav-color">
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="shop.html"
+                      >Shop</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="cart.html"
+                      >Cart</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-text-color"
+                      aria-current="page"
+                      href="checkout.html"
+                      >Checkout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="mt-4">Checkout</h1>
+        </div>
+
+        <div class="col-12">
+          <div
+            class="order-heading py-3 px-4 d-flex justify-content-between rounded-2 mt-5 mb-4"
+          >
+            <span class="text-white font-weight-normal">Order Info</span>
+          </div>
+
+          <div class="row">
+            <div class="col-12 cart-inner">
+              <div class="table-responsive">
+                <table
+                  class="table table-cart"
+                  style="width: 100%"
+                  id="table-cart"
+                >
+                  <thead>
+                    <tr>
+                      <td>
+                        <p>Image</p>
+                      </td>
+                      <td colspan="3">
+                        <p>Product</p>
+                      </td>
+                      <td>
+                        <p>Billing</p>
+                      </td>
+                      <td>
+                        <p>Subtotal</p>
+                      </td>
+                      <td>
+                        <p>Shipping</p>
+                      </td>
+                      <td>
+                        <p>Total</p>
+                      </td>
+                      <td id="qty-column-header" class="d-none">
+                        <p>Quantity</p>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody id="cart-table"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <form class="w-100 order-form" id="checkout_form">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h3 class="form-heading mb-3">Billing Details</h3>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                      <label>First Name:<sup>*</sup></label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="firstName"
+                        placeholder="First Name"
+                        id="firstName"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                      <label>Last Name:<sup>*</sup></label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="lastName"
+                        placeholder="Last Name"
+                        id="lastName"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Street Address:<sup>*</sup></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="address"
+                    placeholder="Street Address"
+                    id="shippingAddress1"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Town/City:<sup>*</sup></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="city"
+                    placeholder="Town/City"
+                    id="shippingCity"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Country:<sup>*</sup></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="shippingCountry"
+                    id="shippingCountry"
+                    placeholder="Country"
+                    value="US"
+                    readonly
+                  />
+                </div>
+                <div class="form-group">
+                  <label>State:<sup>*</sup></label>
+
+                  <select
+                    name="shippingState"
+                    id="state-select"
+                    class="form-control"
+                  >
+                    <option value="">Select State</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>ZIP:<sup>*</sup></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="zipCode"
+                    placeholder="Zip Code"
+                    id="shippingZip"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Phone:<sup>*</sup></label>
+                  <input
+                    type="text"
+                    class="form-control form-control--sm"
+                    name="phone"
+                    ng-model="FullFormData.phone"
+                    ng-model="FullFormData.phone"
+                    id="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Email Address:<sup>*</sup></label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <h3 class="form-heading mt-5 mb-3">Additional Information</h3>
+                <div class="form-group">
+                  <label>Order Notes:(optional)</label>
+                  <textarea
+                    id="order-notes"
+                    name="notes"
+                    placeholder="Order Notes"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h3 class="form-heading mb-3">Your Order</h3>
+                <p id="p_name_all"></p>
+                <table class="table mb-5" id="order-table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2">Subtotal</td>
+                      <td>
+                        $<span id="cartDetails-subtotal" value="0.00"
+                          >0.00</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Shipping</td>
+                      <td>
+                        $<span id="shipping_subtotal" value="0.00">0.00</span>
+                      </td>
+                    </tr>
+                    <tr id="shipping-insurance-tr" style="display: none">
+                      <td colspan="2">Shipping Insurance</td>
+                      <td>
+                        $<span id="shipping-insurance-price" value="0.00"
+                          >1.00</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Total</td>
+                      <td>
+                        $<span id="cartDetails-total" value="0.00">0.00</span>
+                      </td>
+                      <input type="hidden" name="order_total_value" value="" />
+                    </tr>
+                  </tfoot>
+                </table>
+                <div class="payment mb-4">
+                  <div
+                    class="payment-header d-flex justify-content-between px-3 py-3 align-items-center"
+                  >
+                    <label class="mb-0">
+                      <!-- <input type="radio" name="payment" id="radio1"> -->
+                      <span for="radio1"></span>
+                      Payment Details
+                    </label>
+                    <div class="d-inline-flex">
+                      <img src="/images/mastercard.png" />
+                      <img src="/images/discover.png" />
+                      <img src="/images/visa.png" />
+                    </div>
+                  </div>
+                  <div class="payment-form px-3 py-3 row m-0">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control form-control--sm"
+                          placeholder="Card No"
+                          name="cardNumber"
+                          data-threeds="pan"
+                          ng-model="FullFormData.cc_number"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <select
+                          class="form-control"
+                          name="month"
+                          id="month-select"
+                        >
+                          <option value="" selected="selected">
+                            Month(MM)
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <select
+                          class="form-control"
+                          name="creditcardexpyear"
+                          id="year-select"
+                        >
+                          <option value="" selected="selected">
+                            Year(YYYY)
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group mb-0">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="CVV"
+                          placeholder="CVV"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <a
+                        href="javascript:void(0)"
+                        onClick="popop_cvv()"
+                        class="ml-4 cvv"
+                      >
+                        What is This
+                      </a>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                      <img
+                        id="cvv-img"
+                        src="/images/cvv.jpg"
+                        style="display: none"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn p-4">
+                  <label for="vehicle1" class="agree" style="font-size: 15px">
+                    <input
+                      type="checkbox"
+                      id="flexCheckChecked"
+                      name="agreeCheckbox"
+                      value=""
+                    />
+                    You agree with
+                    <a href="terms.html" target="_blank"
+                      >Terms and Conditions</a
+                    >
+                    and
+                    <a href="privacy.html" target="_blank">Privacy Policy.</a>
+                  </label>
+
+                  <div id="prodTerms">
+                    <input
+                      type="checkbox"
+                      id="prod_agree"
+                      name="prod_agree"
+                      class="agree"
+                      value=""
+                    />
+                    By placing an order you will be billed $<span
+                      class="total_price"
+                      id="cart-total"
+                    ></span>
+                    ($<span class="total_price" id="cart-total"></span> + $<span
+                      id="ship_price"
+                      >0</span
+                    >
+                    for shipping) for <span id="prod_name"></span>. This is a
+                    one-time purchase. Shipment via USPS typically takes 3-5
+                    business days. Your credit card will be billed as
+                    <span class="js_website-desc"></span> on your statement.
+                  </div>
+                  <button type="submit" class="btn-order" id="form-btn">
+                    Place Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="popup-overlay fancybox-popup"
+      id="error_modal"
+      style="display: none"
+    >
+      <div class="popup-inner">
+        <span class="popup-close" id="popup-close">X</span>
+        <div id="error_pop" style="text-align: left"></div>
+      </div>
+    </div>
+
+    <footer class="footer1 footer-background-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="company-info">
+              <h5>About</h5>
+              <ul>
+                <li>
+                  Copyright &copy; <span class="js_website-year"></span>
+                  <span class="js_website-name"></span>
+                </li>
+                <li class="js_website-corp"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div>
+              <h5>Menu</h5>
+              <ul>
+                <!--If any 1 product in shop is set to bill model 2,3,4 then cancel link enable -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="shop.html">Shop</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 pt-md-0 pt-5">
+            <h5>Contact</h5>
+            <ul>
+              <li class="pb-2">
+                <i class="fa fa-phone fs-5 me-3 footer-icon-color"></i>
+                <a href="" class="js_website-phone"></a>
+              </li>
+              <li class="pb-2">
+                <i class="fa fa-envelope fs-5 me-3 footer-icon-color"></i>
+                <a href="" class="js_website-email"></a>
+              </li>
+              <li>
+                <i
+                  class="fas fa-map-marker-alt fs-5 me-3 footer-icon-color"
+                ></i>
+                <span class="js_website-address"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 pt-md-0 pt-5">
+            <h5>Return Order</h5>
+            <ul>
+              <li class="js_website-return-partner">Fulfillmentx LLC</li>
+
+              <li><span class="js_website-return-address"></span></li>
+
+              <li class="pb-2">
+                <i class="fa fa-phone fs-5 me-3 footer-icon-color"></i>
+                <a href="tel:phonenumber">7145808450</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-section">
+        <div class="container">
+          <div class="copyright">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-6">
+                <span class="js_website-name"></span>
+              </div>
+              <div class="col-12 col-md-6 text-md-end">
+                <div class="footer-cc">
+                  <img src="images/mastercard.png" />
+                  <img src="images/discover.png" />
+                  <img src="images/visa.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"
+      integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/addons/cleave-phone.us.js"
+      integrity="sha512-sYKXH+IAMtg7mVursFAH+Xu1mIvmSqTd8LTEhKdRmvJhtX2IKUFpkZBZ9pigORvIR6Nt5klEF/P+psiJRa6crQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text-html" src="js/ProductData.js"></script>
+    <script src="js/payform.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/ws-data.js" defer></script>
+    <script src="js/statesData.js"></script>
+    <script src="js/checkout.js"></script>
+    <script>
+      $("#form-btn").click(function () {
+        var errors = new Array();
+        var regex =
+          /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var userData = {
+          firstName: $("#firstName").val(),
+          lastName: $("#lastName").val(),
+          shippingAddress1: $("#shippingAddress1").val(),
+          shippingCity: $("#shippingCity").val(),
+          shippingCountry: $("#shippingCountry").val(),
+          shipping_state: $("#state-select").val(),
+          shippingZip: $("#shippingZip").val(),
+          phone: $("#phone").val(),
+          email: $("#email").val(),
+          orderNotes: $("#order-notes").val(),
+          cc_no: $("#cc_no").val(),
+          cc_month: $("#cc_month").val(),
+          cc_year: $("#cc_year").val(),
+          cvv: $("#cvv").val(),
+        };
+
+        if (userData.firstName == "") {
+          errors.push("Please enter your first name<br>");
+          // return false;
+        }
+        if (userData.lastName == "") {
+          errors.push("Please enter your last name<br>");
+          // return false;
+        }
+        if (userData.shippingAddress1 == "") {
+          errors.push("Please enter your shipping address<br>");
+          // return false;
+        }
+        if (userData.shippingCity == "") {
+          errors.push("Please enter your shiping city<br>");
+          // return false;
+        }
+        if (userData.shippingCountry == "") {
+          errors.push("Please enter your shipping country<br>");
+          // return false;
+        }
+        if (userData.shipping_state == "") {
+          errors.push("Please enter your shipping state<br>");
+          // return false;
+        }
+        if (userData.shippingZip == "") {
+          errors.push("Please enter your shipping zip<br>");
+          // return false;
+        }
+        if (userData.phone == "") {
+          errors.push("Please enter your phone number<br>");
+          // return false;
+        }
+
+        if (!regex.test(userData.email) || userData.email == "") {
+          errors.push("Please enter valid email<br>");
+        }
+        if (userData.cc_no == "") {
+          errors.push("Please enter your credit card number<br>");
+          // return false;
+        }
+        if (userData.cc_month == "") {
+          errors.push("Please enter your credit card month<br>");
+          // return false;
+        }
+        if (userData.cc_year == "") {
+          errors.push("Please enter your credit card year<br>");
+          // return false;
+        }
+        if (userData.cvv == "") {
+          errors.push("Please enter your CVV<br>");
+          // return false;
+        }
+
+        //showing or not showing checkoutpage Total price agree terms based on site-info file's require_generic_text_terms key
+
+        if ($("#flexCheckChecked").prop("checked") == false) {
+          errors.push("Please agree to the terms and conditions<br>");
+        }
+
+        // console.log(errors.length);
+        if (errors.length == 0) {
+          $("#loading-indicator").show();
+        } else {
+          $("#error_modal").show(function () {
+            $("#error_pop").html(errors);
+          });
+          $(".popup-close").click(function () {
+            $("#error_modal").hide();
+          });
+
+          //alert(errors);
+          return false;
+        }
+      });
+
+      function popop_cvv() {
+        $("#cvv-img").slideToggle();
+      }
+      $(".popup-close").click(function () {
+        $("#payment_error_modal").hide();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+:root {
+    --nav-color:#00dffd;
+    --hero-bg:url('/images/hero-bg.jpg');
+    --about-bg:url('/images/about.png');
+    --primary:#5649f3;
+    --secondary: #0e1f44;
+    --header-bar:#77ce5a;
+    --nav-bar-text:#191243;
+    --body-bg:#df5b7a;
+    --footer-bg:#013706;
+    --footer-bottom-bg:#390a20;
+    --footer-bottom-text:#053604;
+    --button-color-gradient: linear-gradient(180deg, #31ff87 -26.97%, #21fe0d 157.88%);
+    --background-color:#d250a5;
+    --footer-background-color:#342644;
+    --text-color:#352634;
+}
